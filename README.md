@@ -1,11 +1,21 @@
-<div align="center">
+# Sovereign Eye
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Sovereign Eye is the repository for the eye project.
 
-  <h1>Built with AI Studio</h2>
+The tree currently holds this introduction and a continuous integration workflow. Application source is not in the repository yet.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Checks
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs when:
 
-</div>
+- commits are pushed to `main`
+- a pull request targets `main`
+- someone starts the workflow from the Actions tab
+
+The workflow fails when an HTML heading in this file is opened at one level and closed at another. Text inside code spans is ignored, so an example can show a broken tag without failing the check.
+
+Run the same check locally:
+
+```bash
+python3 scripts/check_readme.py
+```
